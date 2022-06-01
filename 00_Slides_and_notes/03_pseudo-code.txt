@@ -1,0 +1,17 @@
+WHILE machinePluggedIn    LOOP
+  IF machineIsOn          Conditional
+    IF machineHasWater
+      IF machineHasBeans()
+        makeCoffee!
+      ELSE 
+        beans.refill()
+        repeat..
+    ELSE 
+      water.refill()
+      repeat..
+  ELSE
+    machine.turnOn()
+    repeat..
+
+
+  
