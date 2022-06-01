@@ -1,15 +1,12 @@
 // There are many operators in Javascript that help us control and manipulate variables in many ways
 // Here are the most important ones
 
-
-// The assigment operator ( = )
+// (=)
+// The assigment operator = We use this operator to asign values to variables
 let myNum = 24;
-/*
-  We use this operator to asign values to variables
-*/
 
-// The (+) or addition operator
-// Can be used to add 2 numbers together or to concatenate 2 strings
+// (+) 
+// Addition operator = Can be used to add 2 numbers together or to concatenate 2 strings
 
 // with number ( adds )
 // with String ( Concatenation )

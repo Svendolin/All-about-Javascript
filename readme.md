@@ -42,14 +42,9 @@ About ES6:
 
 | Topic | Content  | 
 |:--------------| :--------------|
-| 01 Basics | `$(document).ready(function(){})` // Selectors // `.append() vs .prepend()` // Functions (colour change) // `.click(event)` (Add and delete content) // `.hover()`(over text) // Mouse-Coordinates-Hover |
-| 02 Animations | ShowAndHide-Buttons for Text // `Toggle` = ShowAndHide with ONE Button // ShowAndHide + Change Class of Object // HELPFUL `Toggle vs Hide` // boxy animation using `animate()` |
-| 03 Sliders | Basic Slider with Back and Forward Button + Autoload // Responsive Slider with the same functions as the basic slider but responsive |
-| 04 Accordeons | Basic Accordeon: Show and Hide Content VERTICALLY by clicking the +Button |
-| 05 Tabs | Tab Basic: Tab through the content HORIZONTALLY by clicking the tab peak folder |
-| 06 Timelines | Vertical timeline with basic show by click // Vertical Timeline with animated show by click // Horizontal Timeline |
-| 07 ModalPopUps | Like a selfmade "Sweetalert" = Click the button to pop up a modal message |
-| 08 AllComponentsTask | Kittenpage example (used JQUERY for kitten image gallery and form validation) NOTE: Basic exercises with image gallery and form validation was originally made with vanilla JS|
+| 01 Basics | 01 `console.log()` // 02 `data types` of values like: (strings, numbers, arrays, boolean, objects) // 03 `operators` to control and manipulate varaibles (==, ===, !===, && and many more) // 04 `conditionals` are IF {} ELSE {} statements  |
+| 02 --- |   |
+
 
 <br />
 <br />
@@ -69,6 +64,15 @@ About ES6:
 
 <br>
 <br>
+
+***
+## Javascript-Stuff in a Nutshell 🥜
+***
+ CDNJS:
+* Shown in in the head of each HTML file. Dont forget to copy the most recent [CDNJS CODE FROM HERE](https://cdnjs.com/libraries/jquery) before you start a new project! Please dont forget to add this Script-tag BEFORE your Javascript link in your head-html!
+
+<br />
+<br />
 
 
 ***

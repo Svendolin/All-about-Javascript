@@ -3,19 +3,19 @@
 /* COMMENTS IN GERMAN */
 
 // (Strings): Das sind Zeichenketten ('' oder "", alles was in den Zeichen liegt. Können Buchstaben, Zahlen, Zeichen sein.)
-var person_name = 'Victor'
+let person_name = 'Victor'
 
 // (Numbers): Das ist eine Zahl, ohne Quatationmarks "" oder ''
-var person_age = 41
+let person_age = 41
 
 // (Boolean): Entweder TRUE or FALSE
-var person_alive = true
+let person_alive = true
 
 // (Array): Listen. Diese macht man mit eckigen Klammern ALTGR [] und füllt sie mit QMs '' und trennt sie mit Kommas ,
-var person_parents = ['Maria', 'Peter', 'Anna', 'Kim', 'Dominic', 'Sven']
+let person_parents = ['Maria', 'Peter', 'Anna', 'Kim', 'Dominic', 'Sven']
 
 // (Objects): Sammlung von Daten, kann alles sein. Wird definiert mit ALTGR {}
-var person = {
+let person = {
   name :  'Victor',
   age : 41,
   alive : true,
