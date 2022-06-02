@@ -66,10 +66,131 @@ About ES6:
 <br>
 
 ***
-## Javascript-Stuff in a Nutshell 🥜
+## Basic Javascript-Stuff in a Nutshell 🥜
 ***
- CDNJS:
-* Shown in in the head of each HTML file. Dont forget to copy the most recent [CDNJS CODE FROM HERE](https://cdnjs.com/libraries/jquery) before you start a new project! Please dont forget to add this Script-tag BEFORE your Javascript link in your head-html!
+
+_**What are DATA TYPES ?**_
+
+* Data types describe the different types or kinds of data that we’re gonna be working with and storing in variables. 
+
+
+```js
+/* ---- Data Types ---- */
+
+// (Strings)
+let person_name = 'Victor'
+
+// (Numbers)
+let person_age = 41
+
+// (Boolean)
+let person_alive = true
+
+// (Array)
+let person_parents = ['Maria', 'Peter', 'Tom', 'Dave', 'Lisa', 'Paul']
+
+// (Objects)
+let person = {
+  name :  'Victor',
+  age : 41,
+  alive : true,
+  parents: ['Maria', 'Peter'] 
+}
+
+// Undefined: Not defined (variable has been declared but no assigned value) => "let toiletpaperholder"
+
+// Null: No value (EMPTY AND NON-EXISTENT) => "let toiletpaperholder = null"
+```
+![alt text](https://i.stack.imgur.com/T9M2J.png)
+
+<br />
+
+_**What are OPERATORS?**_
+
+* Operators in Javascript help us to control and manipulate variables in many ways 
+
+
+```js
+/* ---- Operators ---- */
+// (=) The assigment operator 
+let myNum = 24;
+
+// (+) Addition operator 
+let myStr1 = "Hello";
+let myStr2 = "World";
+let separator = " ";
+let conc = myStr1 + separator + myStr2;
+console.log(conc)
+
+// (-) and (*) and (/) (- Substraction operator) (* multiplication operator) (/ division operator)
+let someNumber = 15;
+console.log(myNum - someNumber) // -76 (Number)
+console.log(myNum * someNumber) // 2400 (Number)
+console.log(myNum / someNumber) // 0.24 (Number)
+console.log(24 * 32 - 200 + (3 * 4)) // 580 (Number)
+
+// (>) or (<) Bigger than vs smaller than operator
+console.log( 3 > 1 ) // True
+console.log( 'foo' > 'fo' ) // True (amount of letters)
+
+// (==) Equal operator
+console.log('100' == 100) // True
+
+// (===) Strictly equal operator
+console.log(someNumber === 100)// false
+
+// (<=) and (=>)Bigger-or equal than vs smaller-or equal than
+console.log(someNumber <= 100) // true
+console.log(someNumber >= 100) // false
+
+// (!=) and (!==) NOT operator (!)
+console.log( someNumber != 100) // ==
+console.log( someNumber !== 100) // ===
+
+// (&&) AND Operator
+console.log( 100 > 80 && 100 < 200) // true
+console.log( 100 > 80 && 300 < 200) // false
+
+// (||) OR Operator
+console.log( 100 > 80 || 100 < 200) // true
+console.log( 100 > 80 || 300 < 200) // true
+
+// (%) Modulus Operator
+console.log(6 / 2) // 3
+console.log(7 / 2) // 3.5
+
+```
+
+
+<br />
+
+_**What are CONDITIONALS ?**_
+
+* Conditional statements are used to perform different actions based on different conditions.
+* Conditional statements control behavior in JavaScript and determine whether or not pieces of code can run
+
+```js
+/* ---- Classic IF / ELSE - Statement ---- */
+
+if (pluggedIn === true && isOn === true){
+  console.log('Items are being displayed')
+  if( item ) {
+    if( item === 'Coffee'){
+      if (current_beans >= min_beans && current_water >= min_water){
+        console.log('Coffee TIME :D')
+      } else {
+        console.log('Not enough Water or Coffee')
+      } 
+    } else {
+      console.log('Your item is not available at the moment')
+    }
+  } else {
+    console.log('Please select an item')
+  }
+} else {
+  console.log('Turn me on pls')
+}
+```
 
 <br />
 <br />
