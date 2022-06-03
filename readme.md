@@ -77,19 +77,19 @@ _**What are DATA TYPES ?**_
 ```js
 /* ---- Data Types ---- */
 
-// (Strings)
+// (Strings = Not mutable "Zeichenketten")
 let person_name = 'Victor'
 
-// (Numbers)
+// (Numbers = "Zahlen")
 let person_age = 41
 
-// (Boolean)
+// (Boolean = Decision if true or false)
 let person_alive = true
 
-// (Array)
+// (Array = List of Values)
 let person_parents = ['Maria', 'Peter', 'Tom', 'Dave', 'Lisa', 'Paul']
 
-// (Objects)
+// (Objects = Container of a collection of Data)
 let person = {
   name :  'Victor',
   age : 41,
@@ -105,10 +105,11 @@ let person = {
 
 <br />
 
+
+
 _**What are OPERATORS?**_
 
 * Operators in Javascript help us to control and manipulate variables in many ways 
-
 
 ```js
 /* ---- Operators ---- */
@@ -160,8 +161,6 @@ console.log(6 / 2) // 3
 console.log(7 / 2) // 3.5
 
 ```
-
-
 <br />
 
 _**What are CONDITIONALS ?**_
@@ -191,8 +190,35 @@ if (pluggedIn === true && isOn === true){
   console.log('Turn me on pls')
 }
 ```
-
 <br />
+
+
+_**ITERATION: FOR-LOOP or FOREACH-LOOP with an arrow-function?**_
+
+* Up until now, we've been doing our iterating with for loops. These are great for one-off tasks.
+* BUT: Every array in JavaScript comes with the .forEach() method. This method lets us iterate over every element of the array directly:
+
+```js
+/* ---- for() VS forEach() ---- */
+
+const array1 = ['a', 'b', 'c'];
+
+array1.forEach(element => console.log(element));
+
+// expected output: "a"
+// expected output: "b"
+// expected output: "c"
+
+const array2 = ['1', '2', '3'];
+
+for(let i = 0; i < array2.length; i++){
+  console.log(array2[i])
+}
+
+// expected output: "1"
+// expected output: "2"
+// expected output: "3"
+```
 <br />
 
 
