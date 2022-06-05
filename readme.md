@@ -230,6 +230,33 @@ for (let i = 0; i < array2.length; i++) {
 
 <br />
 
+_**FUNCTIONS and ARROW=>FUNCTIONS:**_
+
+- A function in JavaScript is similar to a procedure, a set of statements that performs a task or calculates a value, but for a procedure to qualify as a function, it should take some input and return an output where there is some obvious relationship between the input and the output.
+- A JavaScript function is a block of code designed to perform a particular task.
+- A JavaScript function is executed when "something" invokes it (calls it).
+
+```js
+/* ---- Function declaration ---- */
+
+// Function declarations are pushed to the top due to js hoisting:
+console.log(square(4)) // 16
+// Function was called above, parameter n was filled with a number. This here is the built up of the function:
+function square ( n ) {
+  return n * n
+}
+
+// in Arrow form ( Ab ES6 )
+let squareArrow = n => console.log(n * n) // 25
+// Initialisation ALWAYS after the arrow function:
+ squareArrow(5) 
+ 
+```
+
+
+
+<br />
+
 ---
 
 ## Technologies ✅
