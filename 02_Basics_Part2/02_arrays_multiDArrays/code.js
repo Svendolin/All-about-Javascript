@@ -2,17 +2,17 @@
 
 /* Array are basically lists of values */
 /* They can have strings : */
-var myArr = ['popcorn', 'coke', 'candy'];
+let myArr = ['popcorn', 'coke', 'candy'];
 /* They can also have Numbers */
-var myArr2 = [2, 3, 4];
+let myArr2 = [2, 3, 4];
 /* They can also have Booleans */
-var myArr3 = [true, true, false];
+let myArr3 = [true, true, false];
 /* Basically any datatype you can think of, even objects */
-var myArr4 = [{color: 'red', age: 26 },{color: 'blue', age: 90 }]
+let myArr4 = [{color: 'red', age: 26 },{color: 'blue', age: 90 }]
 // Or you can also have arrays in arrays
 // This is knowns a a multidimensional array
 
-var multi = [
+let multi = [
   [1, 2, 3, 4, 5],
   ['Luca', 'Chin', 'Stefan'],
   [
