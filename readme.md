@@ -80,25 +80,32 @@ _**What are DATA TYPES ?**_
 ```js
 /* ---- Data Types ---- */
 
-// (Strings = Not mutable "Zeichenketten")
+// 1) (Strings = Not mutable "Zeichenketten")
 let person_name = "Victor";
     //Character Escaping:
     let myString1 = "He didn't do it"
     let myString2 = '"This is a quote"'
-    // Character Escaping
+    // Character Escaping with \:
     let alternative1 = 'He didn\'t do it'
     let alternative2 = "\"This is a quote\""
+    //Template Strings using ``:
+    let text = `The quick brown fox jumps over
+                the lazy dog`;
+    //Interpolation (interpolate variables into strings) with ${...}:
+    let firstName = "John";
+    let lastName = "Doe";
+    let text = `Welcome, ${firstName} ${lastName}!`; // Welcome, John Doe!
 
-// (Numbers = "Zahlen")
+// 2) (Numbers = "Zahlen")
 let person_age = 41;
 
-// (Boolean = Decision if true or false)
+// 3) (Boolean = Decision if true or false)
 let person_alive = true;
 
-// (Array = List of Values)
+// 4) (Array = List of Values)
 let person_parents = ["Maria", "Peter", "Tom", "Dave", "Lisa", "Paul"];
 
-// (Objects = Container of a collection of Data)
+// 5) (Objects = Container of a collection of Data)
 let person = {
   name: "Victor",
   age: 41,
@@ -106,9 +113,9 @@ let person = {
   parents: ["Maria", "Peter"],
 };
 
-// Undefined: Not defined (variable has been declared but no assigned value) => "let toiletpaperholder"
+// 6) Undefined: Not defined (variable has been declared but no assigned value) => "let toiletpaperholder"
 
-// Null: No value (EMPTY AND NON-EXISTENT) => "let toiletpaperholder = null"
+// 7) Null: No value (EMPTY AND NON-EXISTENT) => "let toiletpaperholder = null"
 ```
 
 ![alt text](https://i.stack.imgur.com/T9M2J.png)
