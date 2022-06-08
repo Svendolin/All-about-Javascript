@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Todo's</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Todos</h1>
+  </header>
+  
+  <main id="todo-list">
+    <form id="add">
+      <input type="text" id="addinput">
+      <button id="addButton" for="addinput">&nbsp;+&nbsp;</button>
+    </form> 
+    <div id="list"></div>
+    <div class="extras">
+      <button id="markAllCompleted"><img src="images/check-circle.svg" alt="A check mark in a circle">Mark all as completed</button>
+      <button id="clearCompleted"><img src="images/trash-2.svg" alt="A trash can">Clear completed</button>
+    </div>
+    
+  </main>
+  <div class="toggleDarkMode"><img src="images/moon.svg" class="darkmode dark" alt="Moon icon (dark mode)" title="toggle dark mode"></div>
+  <footer>
+    <small>Made with ❤️</small>
+  </footer>
+  <script src="code.js"></script>
+</body> 
+</html>

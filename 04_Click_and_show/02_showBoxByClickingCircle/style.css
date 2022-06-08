@@ -1,0 +1,57 @@
+/* === Small CSS Reset === */
+*{
+  margin: 0;
+  padding: 0;
+}
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+body{
+  background: #444;
+}
+
+main{
+  width: 100vw;
+  height: 100vh;
+  border:solid red 2px;
+  position: relative;
+  overflow: hidden;
+}
+
+main h1{
+  color: #ddd;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 2em;
+}
+
+main h2{
+  color: #ddd;
+  font-family: monospace;
+  text-align: center;
+}
+
+#circle{
+  width: 150px;
+  height: 150px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+#circle:hover{
+  background: #999;
+  cursor: pointer;
+}
+
+.box{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border: solid 1px white;
+}

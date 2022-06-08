@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  body{
+    background-color: black;
+    color: white;
+  }
+  span.storyItem{
+    color:gold;
+  }
+  input, label {
+    margin: 0.5rem 0;
+  }
+  .error {
+    color: red;
+  }
+  </style>
+  
+</head>
+<body>
+  
+  <h1>My Form</h1>
+  <form>
+
+    <label for="enemy">Name of your enemy</label>
+    <input type="text" id="enemy"><br>
+    <label for="hero">Your favorite person in the world</label>
+    <input type="text" id="hero"><br>
+    <label for="fruit">A fruit you dislike</label>
+    <input type="text" id="fruit"><br>
+    <label for="item">An item you really like</label>
+    <input type="text" id="item"><br>
+    <label for="age">Your Age</label>
+    <input type="number" id="age"><br>
+    
+    <input id="submit" type="submit" value="Send">
+
+  </form>
+  <div class="output"></div>
+  <script src="story.js"></script>
+</body>
+</html>
