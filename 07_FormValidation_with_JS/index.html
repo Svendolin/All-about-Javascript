@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Form Validation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+  <script src="code.js" defer></script>
+</head>
+<body>
+  <form action="sendEmail.php" method="POST">
+    <h1>Form validation</h1>
+    
+    <label for="first-name">First name</label>
+    <input required type="text" id="first-name">
+    
+    <label for="last-name">Last name</label>
+    <input min="20" type="text" id="last-name">
+
+    <label for="email">Email</label>
+    <input pattern="" type="text" id="email">
+    
+    <label for="message">Message</label>
+    <textarea id="message"></textarea>
+    <button>Submit</button> 
+
+  </form>
+</body>
+</html>

@@ -1,0 +1,96 @@
+/* === Small CSS Reset === */
+*{
+  margin : 0;
+  padding: 0;
+}
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+body{
+  background-color:#333;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form{
+  width : 400px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+form input{
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 1.3em;
+  border-radius: 4px;
+}
+
+form label{
+  font-family: sans-serif;
+  font-size: 1.5em;
+  color: #eee;
+  margin-top: 1em;
+}
+
+form button{
+  margin: 2em 0;
+  padding: 0.5em 0;
+  background-color:rgb(100, 255, 100);
+  border: solid 1px green;
+  width: 60%;
+  align-self: center;
+  border-radius: 8px;
+}
+
+form button:hover{
+  background-color: rgb(62, 255, 62);
+  cursor: pointer;
+}
+
+form input:focus{
+  outline: rgb(100, 255, 100) auto 5px;
+}
+
+form span{
+  color: red;
+  font-family: sans-serif;
+}
+
+.mybox{
+  width: 300px;
+  height: 200px;
+  background-color:rgb(100, 255, 100);
+  color: #222;
+  font-size: 1em;
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+
+.mybox ul li{
+  list-style: none;
+}
+
+
+/* Textarea and more */
+
+form textarea{
+  width: 100%;
+  min-height: 200px;
+  font-size: 1.4em;
+  padding: 0.5em;
+  border-radius: 4px;
+}
+
+form h1{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(100, 255, 100);
+  align-self: center;
+}

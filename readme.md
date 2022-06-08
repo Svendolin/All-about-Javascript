@@ -34,19 +34,25 @@ About ES6:
 
 ---
 
-- [01_Basics](https://github.com/Svendolin/All-about-JQuery/tree/master/01_Basics)
-- [02_Animations](https://github.com/Svendolin/All-about-JQuery/tree/master/02_Animations)
-- [03_Sliders](https://github.com/Svendolin/All-about-JQuery/tree/master/03_Sliders)
-- [04_Accordeons](https://github.com/Svendolin/All-about-JQuery/tree/master/04_Accordeons)
-- [05_Tabs](https://github.com/Svendolin/All-about-JQuery/tree/master/05_Tabs)
-- [06_Timelines](https://github.com/Svendolin/All-about-JQuery/tree/master/06_Timelines)
-- [07_ModalPopUps](https://github.com/Svendolin/All-about-JQuery/tree/master/07_ModalPopUps)
-- [08_AllComponentsTask](https://github.com/Svendolin/All-about-JQuery/tree/master/08_AllComponentsTask)
+- [00_Slides_and_notes](https://github.com/Svendolin/All-about-Javascript/tree/master/00_Slides_and_notes)
+- [01_Basics](https://github.com/Svendolin/All-about-Javascript/tree/master/01_Basics)
+- [02_Basics_Part2](https://github.com/Svendolin/All-about-Javascript/tree/master/02_Basics_Part2)
+- [03_Basics_Part3](https://github.com/Svendolin/All-about-Javascript/tree/master/03_Basics_Part3)
+- [04_Click_and_show](https://github.com/Svendolin/All-about-Javascript/tree/master/04_Click_and_show)
+- [05_Calculator](https://github.com/Svendolin/All-about-Javascript/tree/master/05_Calculator)
+- [06_Kitten_image_gallery](https://github.com/Svendolin/All-about-Javascript/tree/master/06_kitten_image_gallery)
+- [07_FormValidation_with_JS]()
 
 | Topic     | Content                                                                                                                                                                                                                                      |
 | :-------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 00 Slides and Notes | Slides and notes which might be supportive for the whole project |
 | 01 Basics | 01 `console.log()` // 02 `data types` of values like: (strings, numbers, arrays, boolean, objects) // 03 `operators` to control and manipulate varaibles (==, ===, !===, && and many more) // 04 `conditionals` are IF {} ELSE {} statements |
-| 02 ---    |                                                                                                                                                                                                                                              |
+| 02 Basics II | 00 Exercises // 01 `loops for() and forEach()` // 02 `arrays` // 03 `objects` // 04 `strings`(string methods and template strings) // 05 `alert + confirm + prompt` // 06 `pop() push() shift() unshift()`|
+| 03 Basics III | 01 `functions + arrow=>functions` // 02 `DOM Manipulation`| 
+| 04 Click and Show | 01 Show Box by clicking a button // 02 Show RANDOM Box by clicking a circle |
+| 05 Calculator | Functionable Calculator with Vanilla Javascript | 
+| 06 Kitten Image Gallery | Clickable Kitten Images - the clicked image will be shown on a big screen |
+
 
 <br />
 <br />
@@ -272,9 +278,6 @@ let squareArrow = n => console.log(n * n) // 25
 
 ---
 
-CDNJS:
-
-- Shown in in the head of each HTML file. Dont forget to copy the most recent [CDNJS CODE FROM HERE](https://cdnjs.com/libraries/jquery) before you start a new project! Please dont forget to add this Script-tag BEFORE your Javascript link in your head-html!
 
 <br />
 <br />
