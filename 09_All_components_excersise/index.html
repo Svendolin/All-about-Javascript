@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Components</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+  <script defer src="code.js"></script>
+  <script defer src="gallery.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="main-nav">
+      <div class="burger">🍔</div>
+      <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+      </ul>
+    </nav>
+    <div class="headings-container">
+      <h1>CAAS</h1>
+      <h2>Cats Are Awesome Society</h2>
+    </div>
+  </header>
+  <div class="main">
+    <section class="about-us">
+      <h2>About us</h2>
+      <p>We are the "Cats are Awesome Society". Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur quia neque sunt voluptates ipsa!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, consequatur.</p>
+      <p>If you have any questions don't hessitate to contact us!</p>
+      <address>
+        <p>Katzestrasse 25</p>
+        <p>3894, Catville</p>
+        <p>CC, Cat Country</p>
+      </address>
+      <p>tel: 091 455 55 55</p>
+    </section>
+    <aside class="upcoming" id="upcoming">
+      <h2>Upcoming Events</h2>
+      <ul class="events-list">
+        Loading Upcoming Events
+      </ul>
+    </aside>
+  </div>
+  <section class="gallery">
+    <h2>Gallery</h2>
+    <main class="container">
+      <div class="gallery_large">
+          <img class="gallery_large_img" src="http://placekitten.com/700/400" alt="">
+          <div class="gallery_left">&lt;</div>
+          <div class="gallery_right">&gt;</div>
+      </div>
+      <div class="gallery_thumbs">
+          <img class="gallery_selected" src="http://placekitten.com/700/400" alt="">
+          <img src="https://www.fillmurray.com/700/400" alt="">
+          <img src="https://dummyimage.com/700x400/fff/aaa" alt="">
+          <img src="https://loremflickr.com/700/400" alt="">
+          <img src="https://baconmockup.com/700/400" alt="">
+          <img src="https://www.stevensegallery.com/700/400" alt="">
+          <img src="http://lorempixel.com/700/400" alt="">
+          <img src="https://www.placecage.com/700/400" alt="">
+          <img src="http://placeimg.com/700/400/any" alt="">
+          <img src="https://placebear.com/700/400" alt="">
+      </div>
+      <div class="gallery_controls"><input type="checkbox" id="autoplay"><label for="autoplay">&nbsp;Autoplay</label></div>
+  </main>
+  </section>
+  <section class="contact-us">
+    <h2>Contact Us</h2>
+    <form class="contact">
+        <label for="first-name">First Name</label>
+        <input type="text" name="first-name" id="first-name">
+        <label for="first-name">Last Name</label>
+        <input type="text" name="last-name" id="last-name">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <div class="counter">0</div>
+        <button type="submit">Send</button>
+    </form>
+  </section>
+  <footer>
+    <small>&copy; Copyright</small>
+  </footer>
+</body>
+</html>
+

@@ -233,8 +233,10 @@ for (let i = 0; i < array2.length; i++) {
 // expected output: "1"
 // expected output: "2"
 // expected output: "3"
-```
 
+/* ---- Manipulate Arrays ["foo","bas"] ---- */
+```
+![alt text](https://i.stack.imgur.com/1pQk8.jpg)
 <br />
 
 _**FUNCTIONS and ARROW=>FUNCTIONS:**_
