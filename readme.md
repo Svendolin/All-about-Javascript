@@ -41,7 +41,9 @@ About ES6:
 - [04_Click_and_show](https://github.com/Svendolin/All-about-Javascript/tree/master/04_Click_and_show)
 - [05_Calculator](https://github.com/Svendolin/All-about-Javascript/tree/master/05_Calculator)
 - [06_Kitten_image_gallery](https://github.com/Svendolin/All-about-Javascript/tree/master/06_kitten_image_gallery)
-- [07_FormValidation_with_JS]()
+- [07_FormValidation_with_JS](https://github.com/Svendolin/All-about-Javascript/tree/master/07_FormValidation_with_JS)
+- [08_Todo_List](https://github.com/Svendolin/All-about-Javascript/tree/master/08_Todo_List)
+- [09_All_components_excersise](https://github.com/Svendolin/All-about-Javascript/tree/master/09_All_components_excersise)
 
 | Topic     | Content                                                                                                                                                                                                                                      |
 | :-------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -52,6 +54,9 @@ About ES6:
 | 04 Click and Show | 01 Show Box by clicking a button // 02 Show RANDOM Box by clicking a circle |
 | 05 Calculator | Functionable Calculator with Vanilla Javascript | 
 | 06 Kitten Image Gallery | Clickable Kitten Images - the clicked image will be shown on a big screen |
+| 07 Form Validation | Registration form with error handlers and word counter done in Javascript (no PHP) |
+| 08 Todo List | Add content to a list, mark them as completed and clear the completed tasks if needed |
+| 09 All components Website | A terrible looking website to show the previous stuff integrated in a onepager | 
 
 
 <br />
