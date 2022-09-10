@@ -261,7 +261,7 @@ _**FUNCTIONS and ARROW=>FUNCTIONS:**_
 
 // Function declarations are pushed to the top due to js hoisting:
 console.log(square(4)) // 16
-// Function was called above, parameter n was filled with a number. This here is the built up of the function:
+// Function was called above, variable n was filled with a number. This here is the built up of the function:
 function square ( n ) {
   return n * n
 }
