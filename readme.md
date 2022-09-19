@@ -57,6 +57,7 @@ About ES6:
 | 07 Form Validation | Registration form with error handlers and word counter done in Javascript (no PHP) |
 | 08 Todo List | Add content to a list, mark them as completed and clear the completed tasks if needed |
 | 09 All components Website | A terrible looking website to show the previous stuff integrated in a onepager | 
+| 10 QR-CODE Generator | A fully functionable QR Code generator for your websites
 
 
 <br />
