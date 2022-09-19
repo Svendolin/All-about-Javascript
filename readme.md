@@ -44,6 +44,7 @@ About ES6:
 - [07_FormValidation_with_JS](https://github.com/Svendolin/All-about-Javascript/tree/master/07_FormValidation_with_JS)
 - [08_Todo_List](https://github.com/Svendolin/All-about-Javascript/tree/master/08_Todo_List)
 - [09_All_components_excersise](https://github.com/Svendolin/All-about-Javascript/tree/master/09_All_components_excersise)
+- [10_QR-CODE Generator](https://github.com/Svendolin/All-about-Javascript/tree/master/10_QRCodeGenerator)
 
 | Topic     | Content                                                                                                                                                                                                                                      |
 | :-------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -249,6 +250,9 @@ for (let i = 0; i < array2.length; i++) {
 /* ---- Manipulate Arrays ["foo","bas"] ---- */
 ```
 ![alt text](https://i.stack.imgur.com/1pQk8.jpg)
+<br />
+=> Figuratively: A is the bottom of the card pile, T again the highest card of the pile. With pop() we take away the card from the top, with push() we add a card instead.
+<br />
 <br />
 
 _**FUNCTIONS and ARROW=>FUNCTIONS:**_
