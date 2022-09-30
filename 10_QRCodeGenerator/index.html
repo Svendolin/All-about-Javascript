@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/qrcode.min.js"></script>
+  <script src="js/code.js"></script>
+</head>
+
+<body>
+  <div class="qrcontainer">
+    <h1>QR Code Generator</h1>
+    <h2>Copy and paste a website:</h2>
+    <input type="text" id="textinput" placeholder="https://www.randomwebsite.com"> <!-- Input field with id to call Javascript -->
+    <button type="submit" onclick="generateQRCode()">Generate QR Code</button>
+
+    <h3>Your QR Code:</h3>
+    <div id="QRoutput"></div>
+  </div>
+
+</body>
+
+</html>
