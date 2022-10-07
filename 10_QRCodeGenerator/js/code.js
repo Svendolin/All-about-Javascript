@@ -36,5 +36,11 @@ function generateQRCode() {
 
 }
 
+/* Function to let the download button appear when the QR Code is generated */
+$(document).ready(function(){
+  $("#QR").click(function(){
+      $("#download").show();
+  });
+});
 
 

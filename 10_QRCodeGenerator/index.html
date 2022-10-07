@@ -36,14 +36,14 @@
         placeholder="https://www.randomwebsite.com"
       />
       <!-- Input field with id to call Javascript -->
-      <button type="submit" onclick="generateQRCode()">Generate QR Code</button>
+      <button id="QR" type="submit" onclick="generateQRCode()" onclick="myFunction()">Generate QR Code</button>
 
       <h3>Your QR Code:</h3>
       <!-- QR Code will be generated and displayed here packed in an image div -->
       <div id="image">
         <div id="QRoutput"></div> 
       </div>
-      <div class="downloadsection">
+      <div id="downloadsection">
         <a class="downloadbtn" id="download">Doubleclick for Download</a>
       </div>
     </div>
