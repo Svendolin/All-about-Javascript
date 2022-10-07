@@ -1,3 +1,20 @@
+
+/* Function to download the image as a png file */
+$(document).ready(function () {
+  var element = $("#image"); // image element
+
+  $("#download").on('click', function () { // When the button id="download" is clicked
+    html2canvas(element, { // the image element from line 23 is converted to a canvas
+      onrendered: function (canvas) {
+        var imageData = canvas.toDataURL('image/png'); // the canvas is converted to a data url as PNG
+        var newData = imageData.replace(/^data:image\/png/, "data:application/octet-stream");
+        $("#download").attr("download", "QRCode.png").attr("href", newData); // download the image as QRCode.png
+      }
+    });
+  });
+});
+
+
 /* Function to generate QR Code */
 function generateQRCode() {
 
@@ -18,4 +35,6 @@ function generateQRCode() {
   });
 
 }
+
+
 

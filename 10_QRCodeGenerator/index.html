@@ -1,27 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- QR Code min js  is already integrated locally in a JS folder -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <!-- HTML2CANVAS Library -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+      integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- JQuery Library -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/qrcode.min.js"></script>
+    <script src="js/code.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QR Code</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/qrcode.min.js"></script>
-  <script src="js/code.js"></script>
-</head>
+  <body onload="autoClick();">
+    <div class="qrcontainer">
+      <h1>QR Code Generator</h1>
+      <h2>Copy and paste a website:</h2>
+      <input
+        type="text"
+        id="textinput"
+        placeholder="https://www.randomwebsite.com"
+      />
+      <!-- Input field with id to call Javascript -->
+      <button type="submit" onclick="generateQRCode()">Generate QR Code</button>
 
-<body>
-  <div class="qrcontainer">
-    <h1>QR Code Generator</h1>
-    <h2>Copy and paste a website:</h2>
-    <input type="text" id="textinput" placeholder="https://www.randomwebsite.com"> <!-- Input field with id to call Javascript -->
-    <button type="submit" onclick="generateQRCode()">Generate QR Code</button>
-
-    <h3>Your QR Code:</h3>
-    <div id="QRoutput"></div>
-  </div>
-
-</body>
-
+      <h3>Your QR Code:</h3>
+      <!-- QR Code will be generated and displayed here packed in an image div -->
+      <div id="image">
+        <div id="QRoutput"></div> 
+      </div>
+      <div class="downloadsection">
+        <a class="downloadbtn" id="download">Doubleclick for Download</a>
+      </div>
+    </div>
+  </body>
 </html>

@@ -25,6 +25,12 @@ About ES6:
 
 - ECMAScript 6 or ES6 is the latest version of JavaScript and brings since 2016 great new features, such as variables, arrow functions, strings and arrays
 
+About CDN:
+
+- A Content Delivery Network (CDN) is a network of servers in different data centres around the world. It is an excellent way to offer or develop your website or web application worldwide. When you use such a network, your web server connects to a large number of other servers. With the help of a distribution system, the static contents of your web server are transferred to these so-called replica servers.
+
+- I personally use [CDNJS](https://cdnjs.com/) to load library files on websites. In generally used it for FONTAWESOME / JQUERY and HTML2CANVAS (for the QR Code thingy) which is described over [HERE](https://html2canvas.hertzen.com/)
+
 <br />
 <br />
 

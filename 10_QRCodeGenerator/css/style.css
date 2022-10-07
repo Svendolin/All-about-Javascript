@@ -12,10 +12,10 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #333;
-  background: #f4f4f4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: #f3d5b3;
+  display: grid;
+  place-content: center;
+  height: 100vh;
 }
 
 h1{
@@ -32,6 +32,10 @@ h3 {
   font-size: 13px;
   margin: 1rem 0;
   text-align: center;
+}
+
+img {
+  margin-bottom: 30px;
 }
 
 .qrcontainer {
@@ -59,10 +63,23 @@ button {
   background: #333;
   color: #fff;
   cursor: pointer;
-  width: 60%;
+  width: 80%;
   align-self: center;
   margin-bottom: 30px;
 }
+
+.downloadbtn {
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  align-self: center;
+  margin: 30px;
+}
+
 #QRoutput {
   margin: 0 auto;
 }
