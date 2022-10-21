@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>(BROKEN) Download Content via HTML2CANVAS</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+      integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.js"
+      integrity="sha512-sn/GHTj+FCxK5wam7k9w4gPPm6zss4Zwl/X9wgrvGMFbnedR8lTUSLdsolDRBRzsX6N+YgG6OWyvn9qaFVXH9w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        display: grid;
+        place-content: center;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body onload="autoClick();">
+    <div id="image">
+      <div id="output"></div>
+      <!-- Generate the QR Code from 10 here -->
+    </div>
+
+    <div class="downloadsection">
+      <a class="downloadbutton" id="download">Doubleclick to download</a>
+    </div>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        const element = $("#image"); // image element
+
+        $("#download").on('click', function() {
+          // When the button id="download" is clicked
+          html2canvas(element, {
+            // the image element from line 23 is converted to a canvas
+            onrendered: function (canvas) {
+              const imageData = canvas.toDataURL("image/png"); // the canvas is converted to a data url as PNG
+              const newData = imageData.replace(
+                /^data:image\/png/,
+                "data:application/octet-stream"
+              );
+              $("#download")
+                .attr("download", "QRCode.png")
+                .attr("href", newData); // download the image as QRCode.png
+            },
+          });
+        });
+      });
+
+      new QRCode(document.getElementById("output"), "http://www.google.com");
+    </script>
+  </body>
+</html>

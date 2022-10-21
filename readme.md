@@ -40,7 +40,7 @@ About CDN:
 
 ---
 
-- [00_Slides_and_notes](https://github.com/Svendolin/All-about-Javascript/tree/master/00_Slides_and_notes)
+<!-- - [00_Slides_and_notes](https://github.com/Svendolin/All-about-Javascript/tree/master/00_Slides_and_notes)
 - [01_Basics](https://github.com/Svendolin/All-about-Javascript/tree/master/01_Basics)
 - [02_Basics_Part2](https://github.com/Svendolin/All-about-Javascript/tree/master/02_Basics_Part2)
 - [03_Basics_Part3](https://github.com/Svendolin/All-about-Javascript/tree/master/03_Basics_Part3)
@@ -50,7 +50,7 @@ About CDN:
 - [07_FormValidation_with_JS](https://github.com/Svendolin/All-about-Javascript/tree/master/07_FormValidation_with_JS)
 - [08_Todo_List](https://github.com/Svendolin/All-about-Javascript/tree/master/08_Todo_List)
 - [09_All_components_excersise](https://github.com/Svendolin/All-about-Javascript/tree/master/09_All_components_excersise)
-- [10_QR-CODE Generator](https://github.com/Svendolin/All-about-Javascript/tree/master/10_QRCodeGenerator)
+- [10_QR-CODE Generator](https://github.com/Svendolin/All-about-Javascript/tree/master/10_QRCodeGenerator) -->
 
 | Topic     | Content                                                                                                                                                                                                                                      |
 | :-------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -65,6 +65,7 @@ About CDN:
 | 08 Todo List | Add content to a list, mark them as completed and clear the completed tasks if needed |
 | 09 All components Website | A terrible looking website to show the previous stuff integrated in a onepager | 
 | 10 QR-CODE Generator | A fully functionable QR Code generator for your websites. The principle is to generate a QR Code with the URL of the current website such as this example here: https://www.qrcode-monkey.com/de/ and download it as a JPG File at the end! |
+| 11 HTML2CANVAS | Download a screenshot of the current website (or in our case a DIV) as a JPG or PNG File |
 
 
 <br />

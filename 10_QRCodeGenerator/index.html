@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QR Code</title>
+    <title>QR Code Generator</title>
     <link rel="stylesheet" href="css/style.css" />
+    <!-- QR Code Library -->
+    <script src="js/qrcode.min.js"></script>
+
     <!-- JQuery Library -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
@@ -13,10 +16,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    
     <!-- HTML2CANVAS Library -->
     <script src="js/html2canvas.js"></script>
-    <!-- QR Code Library -->
-    <script src="js/qrcode.min.js"></script>
+    
     <!-- Some more JS Code -->
     <script src="js/code.js"></script>
   </head>
@@ -31,16 +34,18 @@
         placeholder="https://www.randomwebsite.com"
       />
       <!-- Input field with id to call Javascript -->
-      <!-- <button id="QR" type="submit" onclick="generateQRCode()">Generate QR Code</button> -->
+      <button id="QR" type="submit" onclick="generateQRCode()">Generate QR Code</button>
 
       <h3>Your QR Code:</h3>
       <!-- QR Code will be generated and displayed here packed in an image div -->
       <div id="image">
         <div id="QRoutput"></div> 
       </div>
+
       <div id="downloadsection">
         <button class="downloadbtn" id="download">Download Code</button>
       </div>
+
     </div>
   </body>
 </html>
