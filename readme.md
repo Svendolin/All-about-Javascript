@@ -145,6 +145,7 @@ let person = {
 _**What are OPERATORS?**_
 
 - Operators in Javascript help us to control and manipulate variables in many ways
+- An operation is a certain type of instruction. If you work with an operator, this is already a so-called operation.
 
 ```js
 /* ---- Operators ---- */
@@ -201,7 +202,7 @@ console.log(7 / 2); // 3.5
 _**What are CONDITIONALS ?**_
 
 - Conditional statements are used to perform different actions based on different conditions.
-- Conditional statements control behavior in JavaScript and determine whether or not pieces of code can run
+- Conditional statements control behavior in JavaScript and determine whether or not pieces of code can run ("Entscheidungen")
 
 ```js
 /* ---- Classic IF / ELSE - Statement ---- */
@@ -230,7 +231,7 @@ if (pluggedIn === true && isOn === true) {
 
 _**ITERATION: FOR-LOOP or FOREACH-LOOP with an arrow-function?**_
 
-- Up until now, we've been doing our iterating with for loops. These are great for one-off tasks.
+- Up until now, we've been doing our iterating with for loops. These are great for one-off tasks ("Schleifen")
 - BUT: Every array in JavaScript comes with the .forEach() method. This method lets us iterate over every element of the array directly:
 
 ```js
