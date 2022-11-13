@@ -9,27 +9,33 @@
 This "All about JAVASCRIPT"-repository catches up its focus on all the Javascript I've learned, coded, commented and written through the years as a **SAE-Web Development** student with exercise lessons every week as well as tutorial videos on _Youtube_.  
 Direct Link to the place where I'm studying are you going to find [HERE](https://www.sae.edu/che/de?utm_source=PS01&gclid=Cj0KCQjw-4SLBhCVARIsACrhWLVIaD_aUt7y4brT7tqMW9o7tskgb1vjQqJFkzQwkwdN_40_Ls7MgAEaAtXxEALw_wcB)
 
-What is Javascript:
+**What is Javascript:**
 
 - JavaScript (JS for short) is a scripting language originally developed by Netscape in 1995 for dynamic HTML in web browsers to evaluate user interactions, modify, reload or generate content, and thus extend the capabilities of HTML.
 
-Why Javascript:
+**Why Javascript:**
 
 - Its after HTML (to define the content of web pages) and CSS (to specify the layout of web pages) one of the most important languages of all and here to program the behavior of web pages!
 
-Javascript != Java:
+**Javascript != Java:**
 
 - Both "Java" and "JavaScript" are trademarks and/or registered trademarks of Oracle in the USA or other countries. The two programming languages have very different syntax, semantics and usage.
 
-About ES6:
+**ES6:**
 
 - ECMAScript 6 or ES6 is the latest version of JavaScript and brings since 2016 great new features, such as variables, arrow functions, strings and arrays
 
-About CDN:
+**CDN:**
 
 - A Content Delivery Network (CDN) is a network of servers in different data centres around the world. It is an excellent way to offer or develop your website or web application worldwide. When you use such a network, your web server connects to a large number of other servers. With the help of a distribution system, the static contents of your web server are transferred to these so-called replica servers.
 
 - I personally use [CDNJS](https://cdnjs.com/) to load library files on websites. In generally used it for FONTAWESOME / JQUERY and HTML2CANVAS (for the QR Code thingy) which is described over [HERE](https://html2canvas.hertzen.com/)
+
+**JQUERY:**
+- Our JQuery [Repository HERE](https://github.com/Svendolin/All-about-JQuery)
+
+**JSON:**
+- Our JQuery [Repository HERE](https://github.com/Svendolin/All-about-AJAX-and-Node.js)
 
 <br />
 <br />
@@ -63,7 +69,7 @@ About CDN:
 | 06 Kitten Image Gallery | Clickable Kitten Images - the clicked image will be shown on a big screen |
 | 07 Form Validation | Registration form with error handlers and word counter done in Javascript (no PHP) |
 | 08 Todo List | Add content to a list, mark them as completed and clear the completed tasks if needed |
-| 09 All components Website | A terrible looking website to show the previous stuff integrated in a onepager | 
+| 09 All components exercise | A terrible looking website to show the previous stuff integrated in a onepager | 
 | 10 QR-CODE Generator | A fully functionable QR Code generator for your websites. The principle is to generate a QR Code with the URL of the current website such as this example here: https://www.qrcode-monkey.com/de/ and download it as a JPG File at the end! |
 | 11 HTML2CANVAS | Download a screenshot of the current website (or in our case a DIV) as a JPG or PNG File |
 
