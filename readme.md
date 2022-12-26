@@ -88,7 +88,7 @@ Direct Link to the place where I'm studying are you going to find [HERE](https:/
 | **VARIABLES**  | Behälter als "Speicherplatz" `const` mit unveränderlichem Namen, dazu Scope-Typ (const = konstant, unveränderlich, let = lokal wiederverwendbar, var = Gültigkeitsbereich auf allen Seiten) und genau einem Wert =>`let variable = 9`                            |
 | **VALUES**     | Wert einer Eigenschaft: z.B. `"blau"` wie =>`let variable = "value"` / ("value" is a string)                                                                                                                                                                     |
 | **METHODS**    | Methoden brauchen für ihren Aufruf immer ein zugehöriges Objekt und werden in einer Klasse definiert. Man kann sie somit gerne "Objektorientierte Funktionen mit Beziehung zur eingespeicherten Klasse" nennen... `public methode()` =>`getElementById()`        |
-| **FUNCTIONS**  | "Eine Funktion ist eine Gruppe von Anweisungen, die durch einen Namen aufgerufen werden. Beim Aufruf der Funktion können Daten übergeben werden, um sie innerhalb der Funktion zu bearbeiten." WICHTIG: Funktion immer beim Namen aufrufen, um sie zu aktivieren |
+| **FUNCTIONS**  | Eine Funktion kann zum Beispiel aufgerufen werden, wenn ein Ereignis eintritt, etwa wenn der Benutzer auf eine Schaltfläche klickt. WICHTIG: Funktion immer beim Namen aufrufen, um sie zu aktivieren |
 
 <br>
 <br>
@@ -301,7 +301,21 @@ let squareArrow = n => console.log(n * n) // 25
 ## Technologies ✅
 
 ---
+- External scripts are practical when the same code is used in many different web pages. I personally do not write a < script > tag in my HTML file, but rather link to an external script file. For short explanations its not a shame to use the < script > tag in the HTML file of course!
 
+
+```js
+// External file:
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+
+// HTML file in the <head> section:
+<script src="myScript.js"></script>
+// Note: If you put the <script> tag in the <body>, the script will not work unless you use "defer" like: <script src="myScript.js" defer></script>
+ 
+```
 
 <br />
 <br />
