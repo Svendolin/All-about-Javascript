@@ -83,13 +83,14 @@ Direct Link to the place where I'm studying are you going to find [HERE](https:/
 
 | Term (word):   | Explenation in German for a better personal understanding for myself:                                                                                                                                                                                            |
 | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **STATEMENTS**    | Ein JavaScript-Programm ist eine Liste von Programmieranweisungen. = `let x, y, z; (Statement 1), x = 5; (Statement 2), y = 6; (Statement 3) etc`                                                                                                                                            |
+| **STATEMENTS**    | Die Anweisungen werden nacheinander in der gleichen Reihenfolge ausgeführt, in der sie geschrieben wurden. Ein JavaScript-Programm ist eine Liste von Programmieranweisungen. = `let x, y, z; (Statement 1), x = 5; (Statement 2), y = 6; (Statement 3)` etc                                                                                                                                           |
 | **OBJECTS**    | "Sammlung von Datenwerten, Eigenschaften (Properties) z.B. = `const = Tasse {farbe: "blau", grösse: "mittel"}` etc                                                                                                                                               |
 | **PROPERTIES** | Eigenschaft des Objektes: `Tasse.farbe` in dot-notation oder `Tasse["farbe"]` in bracket-notation welcher einen Wert (value) mitteilt                                                                                                                            |
-| **VARIABLES**  | Behälter als "Speicherplatz" `const` mit unveränderlichem Namen, dazu Scope-Typ (const = konstant, unveränderlich, let = lokal wiederverwendbar, var = Gültigkeitsbereich auf allen Seiten) und genau einem Wert =>`let variable = 9`                            |
+| **VARIABLES**  | Behälter als "Speicherplatz" mit unveränderlichem Namen, dazu Scope-Typ: (const = Block-konstant, unveränderlich // let = Block-variable, lokal wiederverwendbar // var = lokale Variable mit Gültigkeitsbereich auf allen Seiten) und genau einem Wert => `let variable = 9`                            |
 | **VALUES**     | Wert einer Eigenschaft: z.B. `"blau"` wie =>`let variable = "value"` / ("value" is a string)                                                                                                                                                                     |
-| **METHODS**    | Methoden brauchen für ihren Aufruf immer ein zugehöriges Objekt und werden in einer Klasse definiert. Man kann sie somit gerne "Objektorientierte Funktionen mit Beziehung zur eingespeicherten Klasse" nennen... `public methode()` =>`getElementById()`        |
+| **METHODS**    | Methoden brauchen für ihren Aufruf immer ein zugehöriges Objekt und werden in einer Klasse definiert. Man kann sie somit gerne "Objektorientierte Funktionen mit Beziehung zur eingespeicherten Klasse" nennen... `public methode()` => `getElementById()`        |
 | **FUNCTIONS**  | Eine Funktion kann zum Beispiel aufgerufen werden, wenn ein Ereignis eintritt, etwa wenn der Benutzer auf eine Schaltfläche klickt. WICHTIG: Funktion immer beim Namen aufrufen, um sie zu aktivieren |
+| **KEYWORDS**  | JavaScript-Anweisungen beginnen oft mit einem Schlüsselwort, um die auszuführende JavaScript-Aktion zu identifizieren: `"if" = conditionals` / `"switch" = cases` / `"for" = loops bzw Schleifen` / `"function" = declares a function` / `"return" = exits a function` / `"try" = for error handling`  |
 
 <br>
 <br>
@@ -330,9 +331,11 @@ let squareArrow = n => console.log(n * n) // 25
 
 ---
 
-## Technologies ✅
+## Technologies and additional infos ✅
 
 ---
+
+_**EXTERNAL FILES:**_
 - External scripts are practical when the same code is used in many different web pages. I personally do not write a < script > tag in my HTML file, but rather link to an external script file. For short explanations its not a shame to use the < script > tag in the HTML file of course!
 
 
@@ -347,6 +350,24 @@ function myFunction() {
 <script src="myScript.js"></script>
 // Note: If you put the <script> tag in the <body>, the script will not work unless you use "defer" like: <script src="myScript.js" defer></script>
  
+```
+
+<br>
+
+_**CODE BLOCKS:**_
+
+```js	
+// Code blocks are used to group one or more statements. A code block starts with { and ends with }. The following example shows a code block containing two JavaScript statements:
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+function myFunction() {
+  document.getElementById("demo1").innerHTML = "Hello Dolly!";
+  document.getElementById("demo2").innerHTML = "How are you?";
+}
 ```
 
 <br />
