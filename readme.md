@@ -99,6 +99,29 @@ Direct Link to the place where I'm studying are you going to find [HERE](https:/
 
 ---
 
+_**What are the Javascript DISPLAY possibilities?**_
+
+- Writing into an HTML element, using innerHTML like:
+```js
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
+
+  ```
+- Writing into the HTML output using document.write().
+- Writing into an alert box, using window.alert() or print stuff, using window.print() like:
+```js
+<button onclick="window.print()">Print this page</button>
+  ```
+- Writing into the browser console, using console.log() for debugging proposes.
+
+
+<br>
+<hr>
+<br>
+
 _**What are DATA TYPES ?**_
 
 - Data types describe the different types or kinds of data that we’re gonna be working with and storing in variables.
@@ -146,7 +169,9 @@ let person = {
 
 ![alt text](https://i.stack.imgur.com/T9M2J.png)
 
-<br />
+<br>
+<hr>
+<br>
 
 _**What are OPERATORS?**_
 
@@ -203,7 +228,9 @@ console.log(6 / 2); // 3
 console.log(7 / 2); // 3.5
 ```
 
-<br />
+<br>
+<hr>
+<br>
 
 _**What are CONDITIONALS ?**_
 
@@ -233,7 +260,9 @@ if (pluggedIn === true && isOn === true) {
 }
 ```
 
-<br />
+<br>
+<hr>
+<br>
 
 _**ITERATION: FOR-LOOP or FOREACH-LOOP with an arrow-function?**_
 
@@ -266,8 +295,10 @@ for (let i = 0; i < array2.length; i++) {
 ![alt text](https://i.stack.imgur.com/1pQk8.jpg)
 <br />
 => Figuratively: A is the bottom of the card pile, T again the highest card of the pile. With pop() we take away the card from the top, with push() we add a card instead.
-<br />
-<br />
+
+<br>
+<hr>
+<br>
 
 _**FUNCTIONS and ARROW=>FUNCTIONS:**_
 
