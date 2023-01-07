@@ -64,7 +64,7 @@ Direct Link to the place where I'm studying are you going to find [HERE](https:/
 | 01 Basics | 01 `console.log()` // 02 `data types` of values like: (strings, numbers, arrays, boolean, objects) // 03 `operators` to control and manipulate varaibles (==, ===, !===, && and many more) // 04 `conditionals` are IF {} ELSE {} statements |
 | 02 Basics II | 00 Exercises // 01 `loops for() and forEach()` // 02 `arrays` // 03 `objects` // 04 `strings`(string methods and template strings) // 05 `alert + confirm + prompt` // 06 `pop() push() shift() unshift()`|
 | 03 Basics III | 01 `functions + arrow=>functions` // 02 `DOM Manipulation`| 
-| 04 Click and Show | 01 Show Box by clicking a button // 02 Show RANDOM Box by clicking a circle |
+| 04 Click and Show | 01 Show Box by clicking a button // 02 Show RANDOM Box by clicking a circle // 03 Show text with InnerHTML |
 | 05 Calculator | Functionable Calculator with Vanilla Javascript | 
 | 06 Kitten Image Gallery | Clickable Kitten Images - the clicked image will be shown on a big screen |
 | 07 Form Validation | Registration form with error handlers and word counter done in Javascript (no PHP) |
