@@ -359,6 +359,7 @@ _**CODE BLOCKS:**_
 ```js	
 // Code blocks are used to group one or more statements. A code block starts with { and ends with }. The following example shows a code block containing two JavaScript statements:
 
+// With a click on this button, "myFunction" (defined down below) will be executed:
 <button type="button" onclick="myFunction()">Click Me!</button>
 
 <p id="demo1"></p>
