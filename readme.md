@@ -103,9 +103,9 @@ Direct Link to the place where I'm studying are you going to find [HERE](https:/
 
 | Keyword  | Explenation in German for a better personal understanding for myself: |
 | :------------- | :----------- |
-| **VAR**    | Deklariert eine Variable und initialisiert sie optional mit einem Wert. |
-| **LET**    | Deklariert eine Blockvariable |
-| **CONST**    | Deklariert eine Blockkonstante |
+| **VAR**    | Deklariert eine Variable und initialisiert sie optional mit einem Wert. (Mehr dazu oben) |
+| **LET**    | Deklariert eine Blockvariable (Mehr dazu oben) |
+| **CONST**    | Deklariert eine Blockkonstante (Mehr dazu oben) |
 | **IF**    | Markiert einen Anweisungsblock, der unter einer Bedingung ausgeführt werden soll (für Conditionals) |
 | **SWITCH**    | Markiert einen Block von Anweisungen, die in verschiedenen Fällen ausgeführt werden sollen. |
 | **FOR**    | Markiert einen Block von Anweisungen, die in einer Schleife ausgeführt werden sollen (For Loop) |
