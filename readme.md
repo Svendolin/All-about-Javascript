@@ -93,6 +93,27 @@ Direct Link to the place where I'm studying are you going to find [HERE](https:/
 | **KEYWORDS**  | JavaScript-Anweisungen beginnen oft mit einem Schlüsselwort, um die auszuführende JavaScript-Aktion zu identifizieren: `"if" = conditionals` / `"switch" = cases` / `"for" = loops bzw Schleifen` / `"function" = declares a function` / `"return" = exits a function` / `"try" = for error handling`  |
 
 <br>
+<hr>
+<br>
+
+
+## Important KEYWORDS in Javascript: ⚡
+
+---
+
+| Keyword  | Explenation in German for a better personal understanding for myself: |
+| :------------- | :----------- |
+| **VAR**    | Deklariert eine Variable und initialisiert sie optional mit einem Wert. |
+| **LET**    | Deklariert eine Blockvariable |
+| **CONST**    | Deklariert eine Blockkonstante |
+| **IF**    | Markiert einen Anweisungsblock, der unter einer Bedingung ausgeführt werden soll (für Conditionals) |
+| **SWITCH**    | Markiert einen Block von Anweisungen, die in verschiedenen Fällen ausgeführt werden sollen. |
+| **FOR**    | Markiert einen Block von Anweisungen, die in einer Schleife ausgeführt werden sollen (For Loop) |
+| **FUNCTION**    | Deklariert eine Funktion |
+| **RETURN**    | Beendet eine Funktion |
+| **TRY**    | Implementiert Fehlerbehandlung für einen Block von Anweisungen |
+
+<br>
 <br>
 
 ---
