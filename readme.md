@@ -86,8 +86,8 @@ Direct Link to the place where I'm studying are you going to find [HERE](https:/
 | **STATEMENTS**    | Die Anweisungen werden nacheinander in der gleichen Reihenfolge ausgeführt, in der sie geschrieben wurden. Ein JavaScript-Programm ist eine Liste von Programmieranweisungen. = `let x, y, z; (Statement 1), x = 5; (Statement 2), y = 6; (Statement 3)` etc                                                                                                                                           |
 | **OBJECTS**    | "Sammlung von Datenwerten, Eigenschaften (Properties) z.B. = `const = Tasse {farbe: "blau", grösse: "mittel"}` etc                                                                                                                                               |
 | **PROPERTIES** | Eigenschaft des Objektes: `Tasse.farbe` in dot-notation oder `Tasse["farbe"]` in bracket-notation welcher einen Wert (value) mitteilt                                                                                                                            |
-| **VARIABLES**  | Behälter als "Speicherplatz" zum Speichern von Daten (Speichern von Datenwerten). Der "Scope" muss definiert werden: (const = Block-konstant, unveränderlich / let = Block-variable, lokal wiederverwendbar / var = lokale Variable mit Gültigkeitsbereich auf allen Bereichen) => `let variable = 9`                            |
-| **VALUES**     | Wert einer Eigenschaft: z.B. `"blau"` wie =>`let variable = "value"` / ("value" is a string)                                                                                                                                                                     |
+| **VARIABLES**  | Behälter als "Speicherplatz" zum Speichern von Daten (Speichern von Datenwerten). Der "Scope" muss definiert werden: (const = Block-konstant, unveränderlich / let = Block-variable, lokal wiederverwendbar / var = lokale Variable mit Gültigkeitsbereich auf allen Bereichen) => `let variable = 9` Alle JavaScript-Variablen müssen mit eindeutigen Namen versehen werden!                          |
+| **VALUES**     | Wert einer Eigenschaft: z.B. `"blau"` wie =>`let variable = "value"` / ("value" is a string, Textwert quasi)                                                                                                                                                                     |
 | **METHODS**    | Methoden brauchen für ihren Aufruf immer ein zugehöriges Objekt und werden in einer Klasse definiert. Man kann sie somit gerne "Objektorientierte Funktionen mit Beziehung zur eingespeicherten Klasse" nennen... `public methode()` => `getElementById()`        |
 | **FUNCTIONS**  | Eine Funktion kann zum Beispiel aufgerufen werden, wenn ein Ereignis eintritt, etwa wenn der Benutzer auf eine Schaltfläche klickt. WICHTIG: Funktion immer beim Namen aufrufen, um sie zu aktivieren |
 | **KEYWORDS**  | JavaScript-Anweisungen beginnen oft mit einem Schlüsselwort, um die auszuführende JavaScript-Aktion zu identifizieren: `"if" = conditionals` / `"switch" = cases` / `"for" = loops bzw Schleifen` / `"function" = declares a function` / `"return" = exits a function` / `"try" = for error handling`  |
@@ -103,15 +103,40 @@ Direct Link to the place where I'm studying are you going to find [HERE](https:/
 
 | Keyword  | Explenation in German for a better personal understanding for myself: |
 | :------------- | :----------- |
-| **VAR**    | Deklariert eine Variable und initialisiert sie optional mit einem Wert. (Mehr dazu oben) / z.B `"Let X; X = 6"` |
-| **LET**    | Deklariert eine Blockvariable (Mehr dazu oben) |
-| **CONST**    | Deklariert eine Blockkonstante (Mehr dazu oben) |
+| **VAR**    | Deklariert eine Variable und initialisiert sie optional mit einem Wert. (Mehr dazu oben) / z.B `"Let X; X = 6"` / Wenn Sie eine mit var deklarierte JavaScript-Variable erneut deklarieren, verliert sie ihren Wert nicht. Sie kann auch versehentlich überschrieben werden, was gefährlich sein kann. (var carName = "Volvo"; var carName;) |
+| **LET**    | Deklariert eine Blockvariable (Mehr dazu oben) - Re-Declaration (Übernennung) nicht möglich! Dafür  |
+| **CONST**    | Deklariert eine Blockkonstante (Mehr dazu oben) - Re-Declaration (Übernennung) nicht möglich. JavaScript const-Variablen muss bei ihrer Deklaration ein Wert zugewiesen werden, z.B.: `const PI = 3.14159265359;`|
 | **IF**    | Markiert einen Anweisungsblock, der unter einer Bedingung ausgeführt werden soll (für Conditionals) |
 | **SWITCH**    | Markiert einen Block von Anweisungen, die in verschiedenen Fällen ausgeführt werden sollen. |
 | **FOR**    | Markiert einen Block von Anweisungen, die in einer Schleife ausgeführt werden sollen (For Loop) |
 | **FUNCTION**    | Deklariert eine Funktion |
 | **RETURN**    | Beendet eine Funktion |
 | **TRY**    | Implementiert Fehlerbehandlung für einen Block von Anweisungen |
+
+<br>
+
+**When to use: "CONST, LET, VAR?"** 
+
+- If you want a general rule: always declare variables with **const.**
+
+- If you think the value of the variable can change, use **let.**
+
+- In this example, price1, price2, and total, are variables:
+
+```js
+<p>In this example, price1, price2, and total are variables.</p>
+
+<p id="demo"></p>
+
+<script>
+const price1 = 5; // CONST
+const price2 = 6; // CONST
+let total = price1 + price2; // LET
+document.getElementById("demo").innerHTML =
+"The total is: " + total;
+</script>
+
+  ```
 
 <br>
 <br>
@@ -149,9 +174,12 @@ _**What are DATA TYPES ?**_
 
 - Data types describe the different types or kinds of data that we’re gonna be working with and storing in variables.
 
+- It's a good programming practice to declare all variables at the beginning of a script.
+
 ```js
 /* ---- Data Types ---- */
 
+// "Non-Zero Value" = There is a value around like these:
 // 1) (Strings = Not mutable "Zeichenketten")
 let person_name = "Victor";
     //Character Escaping:
@@ -167,6 +195,11 @@ let person_name = "Victor";
     let firstName = "John";
     let lastName = "Doe";
     let text = `Welcome, ${firstName} ${lastName}!`; // Welcome, John Doe!
+
+    //Declare many variables in one line:
+    let person_name = "Victor", 
+    person_age = 41, 
+    person_alive = true;
 
 // 2) (Numbers = "Zahlen")
 let person_age = 41;
@@ -184,8 +217,12 @@ let person = {
   alive: true,
   parents: ["Maria", "Peter"],
 };
+// Value of "0" = The value of this variable is actually 0
 
-// 6) Undefined: Not defined (variable has been declared but no assigned value) => "let toiletpaperholder"
+// 6) Undefined: (variable has been declared but no assigned value, "kein versehener Wert") for example:
+
+ let = toiletpaperholder // declared but not defined = "undefined"
+ let toiletpapeholder = "Got some paper"; // declared, defined and assigned a value (string)
 
 // 7) Null: No value (EMPTY AND NON-EXISTENT) => "let toiletpaperholder = null"
 ```
@@ -369,7 +406,7 @@ function myFunction() {
 
 // HTML file in the <head> section:
 <script src="myScript.js"></script>
-// Note: If you put the <script> tag in the <body>, the script will not work unless you use "defer" like: <script src="myScript.js" defer></script>
+// Note: If you put the <script> tag in the <body>, the script will not work unless you use "defer" like: <scrip src="myScript.js" defer></script>
  
 ```
 
@@ -390,6 +427,31 @@ function myFunction() {
   document.getElementById("demo1").innerHTML = "Hello Dolly!";
   document.getElementById("demo2").innerHTML = "How are you?";
 }
+```
+
+<br>
+
+_**General OUTPUT:**_
+
+
+```js
+// HTML
+<p id="demo"></p>
+
+/* Output: 
+3.14 
+John Doe 
+Yes I am! 
+*/
+
+// JS
+const pi = 3.14;
+let person = "John Doe";
+let answer = 'Yes I am!';
+
+document.getElementById("demo").innerHTML =
+pi + "<br>" + person + "<br>" + answer;
+
 ```
 
 <br />
