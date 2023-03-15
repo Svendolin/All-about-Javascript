@@ -86,7 +86,7 @@ Direct Link to the place where I'm studying are you going to find [HERE](https:/
 | **STATEMENTS**    | Die Anweisungen werden nacheinander in der gleichen Reihenfolge ausgeführt, in der sie geschrieben wurden. Ein JavaScript-Programm ist eine Liste von Programmieranweisungen. = `let x, y, z; (Statement 1), x = 5; (Statement 2), y = 6; (Statement 3)` etc                                                                                                                                           |
 | **OBJECTS**    | "Sammlung von Datenwerten, Eigenschaften (Properties) z.B. = `const = Tasse {farbe: "blau", grösse: "mittel"}` etc                                                                                                                                               |
 | **PROPERTIES** | Eigenschaft des Objektes: `Tasse.farbe` in dot-notation oder `Tasse["farbe"]` in bracket-notation welcher einen Wert (value) mitteilt                                                                                                                            |
-| **VARIABLES**  | Behälter als "Speicherplatz" mit unveränderlichem Namen, dazu Scope-Typ: (const = Block-konstant, unveränderlich // let = Block-variable, lokal wiederverwendbar // var = lokale Variable mit Gültigkeitsbereich auf allen Seiten) und genau einem Wert => `let variable = 9`                            |
+| **VARIABLES**  | Behälter als "Speicherplatz" zum Speichern von Daten (Speichern von Datenwerten). Der "Scope" muss definiert werden: (const = Block-konstant, unveränderlich / let = Block-variable, lokal wiederverwendbar / var = lokale Variable mit Gültigkeitsbereich auf allen Bereichen) => `let variable = 9`                            |
 | **VALUES**     | Wert einer Eigenschaft: z.B. `"blau"` wie =>`let variable = "value"` / ("value" is a string)                                                                                                                                                                     |
 | **METHODS**    | Methoden brauchen für ihren Aufruf immer ein zugehöriges Objekt und werden in einer Klasse definiert. Man kann sie somit gerne "Objektorientierte Funktionen mit Beziehung zur eingespeicherten Klasse" nennen... `public methode()` => `getElementById()`        |
 | **FUNCTIONS**  | Eine Funktion kann zum Beispiel aufgerufen werden, wenn ein Ereignis eintritt, etwa wenn der Benutzer auf eine Schaltfläche klickt. WICHTIG: Funktion immer beim Namen aufrufen, um sie zu aktivieren |
@@ -103,7 +103,7 @@ Direct Link to the place where I'm studying are you going to find [HERE](https:/
 
 | Keyword  | Explenation in German for a better personal understanding for myself: |
 | :------------- | :----------- |
-| **VAR**    | Deklariert eine Variable und initialisiert sie optional mit einem Wert. (Mehr dazu oben) |
+| **VAR**    | Deklariert eine Variable und initialisiert sie optional mit einem Wert. (Mehr dazu oben) / z.B `"Let X; X = 6"` |
 | **LET**    | Deklariert eine Blockvariable (Mehr dazu oben) |
 | **CONST**    | Deklariert eine Blockkonstante (Mehr dazu oben) |
 | **IF**    | Markiert einen Anweisungsblock, der unter einer Bedingung ausgeführt werden soll (für Conditionals) |
