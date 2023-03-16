@@ -240,50 +240,56 @@ _**What are OPERATORS?**_
 
 ```js
 /* ---- Operators ---- */
-// (=) The assigment operator
+// 1) (=) The assigment operator
 let myNum = 24;
 
-// (+) Addition operator
+// 2) (+) Addition operator:
 let myStr1 = "Hello";
 let myStr2 = "World";
 let separator = " ";
 let conc = myStr1 + separator + myStr2;
 console.log(conc);
 
-// (-) and (*) and (/) (- Substraction operator) (* multiplication operator) (/ division operator)
+// 3) (+=) Addition assignment operator:
+let x = 10;
+x += 5; // x = x + 5 = 15 (which is the same as X = X + Y - "Zum bestehenden X wird Y addiert")
+
+// Also possible with other operators like: -=, *=, /=, %=, **=, <<=, >>=, >>>=, &=, ^=, |= with the exact same logic! :D
+
+// 4) (-) and (*) and (/) (- Substraction operator) (* multiplication operator) (/ division operator)
 let someNumber = 15;
 console.log(myNum - someNumber); // -76 (Number)
 console.log(myNum * someNumber); // 2400 (Number)
 console.log(myNum / someNumber); // 0.24 (Number)
 console.log(24 * 32 - 200 + 3 * 4); // 580 (Number)
 
-// (>) or (<) Bigger than vs smaller than operator
+// 5) (>) or (<) Bigger than vs smaller than operator
 console.log(3 > 1); // True
 console.log("foo" > "fo"); // True (amount of letters)
 
-// (==) Equal operator
+// 6) (==) Equal operator
 console.log("100" == 100); // True
 
-// (===) Strictly equal operator
+// 7) (===) Strictly equal operator
 console.log(someNumber === 100); // false
 
-// (<=) and (=>)Bigger-or equal than vs smaller-or equal than
+// 8) (<=) and (=>)Bigger-or equal than vs smaller-or equal than
 console.log(someNumber <= 100); // true
 console.log(someNumber >= 100); // false
 
-// (!=) and (!==) NOT operator (!)
+// 9) (!=) and (!==) NOT operator (!)
 console.log(someNumber != 100); // ==
 console.log(someNumber !== 100); // ===
 
-// (&&) AND Operator
+// 10) (&&) AND Operator
 console.log(100 > 80 && 100 < 200); // true
 console.log(100 > 80 && 300 < 200); // false
 
-// (||) OR Operator
+// 11) (||) OR Operator
 console.log(100 > 80 || 100 < 200); // true
 console.log(100 > 80 || 300 < 200); // true
 
-// (%) Modulus Operator
+// 12) (%) Modulus Operator
 console.log(6 / 2); // 3
 console.log(7 / 2); // 3.5
 ```
