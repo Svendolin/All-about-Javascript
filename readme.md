@@ -138,6 +138,24 @@ document.getElementById("demo").innerHTML =
 
   ```
 
+  **Why DYNAMIC TYPES only work with "let"...** 
+
+- This means that the same variable can be used to hold different data types. As we said above: use "let" for dynamic types if the value of the variable should change:
+
+```js
+<p id="demo"></p>
+
+<script>
+let x;         // Now x is undefined (const x; would throw an error)
+x = 5;         // Now x is a Number
+x = "John";    // Now x is a String
+
+document.getElementById("demo").innerHTML = x;
+</script>
+
+  ```
+
+
 <br>
 <br>
 
