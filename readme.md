@@ -400,6 +400,22 @@ function square ( n ) {
   return n * n
 }
 
+// ----------------------------------------------------------
+
+// FINE EXAMPLE:
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+"The temperature is " + toCelsius(77) + " Celsius";
+
+function toCelsius(fahrenheit) { // Function declaration with 77 as parameter from above
+  return (5/9) * (fahrenheit-32);
+} 
+</script>
+
+// ----------------------------------------------------------
+
 // in Arrow form ( Ab ES6 )
 let squareArrow = n => console.log(n * n) // 25
 // Initialisation ALWAYS after the arrow function:
