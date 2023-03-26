@@ -84,11 +84,11 @@ Direct Link to the place where I'm studying are you going to find [HERE](https:/
 | Term (word):   | Explenation in German for a better personal understanding for myself:                                                                                                                                                                                            |
 | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **STATEMENTS**    | Die Anweisungen werden nacheinander in der gleichen Reihenfolge ausgeführt, in der sie geschrieben wurden. Ein JavaScript-Programm ist eine Liste von Programmieranweisungen. = `let x, y, z; (Statement 1), x = 5; (Statement 2), y = 6; (Statement 3)` etc                                                                                                                                           |
-| **OBJECTS**    | "Sammlung von Datenwerten, Eigenschaften (Properties) z.B. = `const = Tasse {farbe: "blau", grösse: "mittel"}` etc                                                                                                                                               |
-| **PROPERTIES** | Eigenschaft des Objektes: `Tasse.farbe` in dot-notation oder `Tasse["farbe"]` in bracket-notation welcher einen Wert (value) mitteilt                                                                                                                            |
-| **VARIABLES**  | Behälter als "Speicherplatz" zum Speichern von Daten (Speichern von Datenwerten). Der "Scope" muss definiert werden: (const = Block-konstant, unveränderlich / let = Block-variable, lokal wiederverwendbar / var = lokale Variable mit Gültigkeitsbereich auf allen Bereichen) => `let variable = 9` Alle JavaScript-Variablen müssen mit eindeutigen Namen versehen werden!                          |
-| **VALUES**     | Wert einer Eigenschaft: z.B. `"blau"` wie =>`let variable = "value"` / ("value" is a string, Textwert quasi)                                                                                                                                                                     |
-| **METHODS**    | Methoden brauchen für ihren Aufruf immer ein zugehöriges Objekt und werden in einer Klasse definiert. Man kann sie somit gerne "Objektorientierte Funktionen mit Beziehung zur eingespeicherten Klasse" nennen... `public methode()` => `getElementById()`        |
+| **OBJECTS**    | "Im wirklichen Leben ist ein Auto ein Objekt..." - Objects sind eine Sammlung von Datenwerten z.B. = `const = car {type: "fiat", model: "500", farbe: "weiss"}` etc                                                                                                                                               |
+| **PROPERTIES** | "Ein Auto hat Eigenschaften wie Gewicht und Farbe. Alle Autos haben die gleichen Eigenschaften, aber die Eigenschaftswerte unterscheiden sich von Auto zu Auto." - Properties sind Eigenschaften eines Objektes: `car.color =` in dot-notation oder `car["color"] =` in bracket-notation welcher einen Wert (value) mitteilt, der hinter dem =-zeichen genannt wird.                                                                                                                            |
+| **METHODS**    | "Methoden eines Autos sind wie Start und Stopp. Alle Autos haben die gleichen Methoden, aber die Methoden werden zu unterschiedlichen Zeiten durchgeführt." - Methoden brauchen für ihren Aufruf immer ein zugehöriges Objekt und werden in einer Klasse definiert. Man kann sie somit gerne "Objektorientierte Funktionen mit Beziehung zur eingespeicherten Klasse" nennen... `car.start() oder car.stop()`        |
+| **VARIABLES**  | Const, let, var-Behälter als "Speicherplatz" zum Speichern von Daten (Container von Datenwerten). => `let car = "Fiat";` Alle JavaScript-Variablen müssen mit eindeutigen Namen versehen werden!                          |
+| **VALUES**     | DatenWERT z.B. `let carColor = "blue"`                                                     |
 | **FUNCTIONS**  | Eine JavaScript-Funktion ist ein Codeblock, der eine bestimmte Aufgabe erfüllen soll. Eine JavaScript-Funktion wird ausgeführt, wenn "etwas" sie aufruft ("callen"). |
 | **KEYWORDS**  | JavaScript-Anweisungen beginnen oft mit einem Schlüsselwort, um die auszuführende JavaScript-Aktion zu identifizieren: `"if" = conditionals` / `"switch" = cases` / `"for" = loops bzw Schleifen` / `"function" = declares a function` / `"return" = exits a function` / `"try" = for error handling`  |
 
@@ -103,9 +103,9 @@ Direct Link to the place where I'm studying are you going to find [HERE](https:/
 
 | Keyword  | Explenation in German for a better personal understanding for myself: |
 | :------------- | :----------- |
-| **VAR**    | Deklariert eine Variable und initialisiert sie optional mit einem Wert. (Mehr dazu oben) / z.B `"Let X; X = 6"` / Wenn Sie eine mit var deklarierte JavaScript-Variable erneut deklarieren, verliert sie ihren Wert nicht. Sie kann auch versehentlich überschrieben werden, was gefährlich sein kann. (var carName = "Volvo"; var carName;) |
-| **LET**    | Deklariert eine Blockvariable (Mehr dazu oben) - Re-Declaration (Übernennung) nicht möglich! Dafür  |
-| **CONST**    | Deklariert eine Blockkonstante (Mehr dazu oben) - Re-Declaration (Übernennung) nicht möglich. JavaScript const-Variablen muss bei ihrer Deklaration ein Wert zugewiesen werden, z.B.: `const PI = 3.14159265359;`|
+| **VAR**    | Deklariert eine Variable und initialisiert sie optional mit einem Wert. / z.B `"Let X; X = 6"` / Wenn man einen mit var deklarierte JavaScript-Variable erneut deklariert, verliert sie ihren Wert nicht. Sie kann auch versehentlich überschrieben werden, was gefährlich sein kann. (var carName = "Volvo"; var carName;) |
+| **LET**    | Deklariert eine Blockvariable - Re-Declaration (Übernennung) nicht möglich!|
+| **CONST**    | Deklariert eine Blockkonstante - Re-Declaration (Übernennung) nicht möglich. JavaScript const-Variablen muss bei ihrer Deklaration ein Wert zugewiesen werden, z.B.: `const PI = 3.14159265359;`|
 | **IF**    | Markiert einen Anweisungsblock, der unter einer Bedingung ausgeführt werden soll (für Conditionals) |
 | **SWITCH**    | Markiert einen Block von Anweisungen, die in verschiedenen Fällen ausgeführt werden sollen. |
 | **FOR**    | Markiert einen Block von Anweisungen, die in einer Schleife ausgeführt werden sollen (For Loop) |
@@ -117,7 +117,7 @@ Direct Link to the place where I'm studying are you going to find [HERE](https:/
 
 **When to use: "CONST, LET, VAR?"** 
 
-- If you want a general rule: always declare variables with **const.**
+- If you want a general rule or declare an object: always declare variables with **const.**
 
 - If you think the value of the variable can change, use **let.**
 
@@ -403,7 +403,8 @@ function square ( n ) {
 // ----------------------------------------------------------
 
 // FINE EXAMPLE:
-<p id="demo"></p>
+<p id="demo"></p> 
+// The temperature is 25 Celsius
 
 <script>
 document.getElementById("demo").innerHTML =
@@ -413,6 +414,17 @@ function toCelsius(fahrenheit) { // Function declaration with 77 as parameter fr
   return (5/9) * (fahrenheit-32);
 } 
 </script>
+
+// ----------------------------------------------------------
+// Local vaiables:
+
+// code here can NOT use carName
+function myFunction() {
+  let carName = "Volvo"; // Local variable
+  // code here can use carName
+}
+// code here can NOT use carName
+
 
 // ----------------------------------------------------------
 
